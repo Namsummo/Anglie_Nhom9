@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi Tiết Sản Phẩm - Fashion Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Fashion Store</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Trang Chủ</a></li>
+            <li><a href="products.html">Sản Phẩm</a></li>
+            <li><a href="cart.html">Giỏ Hàng</a></li>
+            <li><a href="auth.html" class="auth-link">Đăng Nhập</a></li>
+            <li><a href="contact.html">Liên Hệ</a></li>
+        </ul>
+    </nav>
+
+    <section class="product-detail">
+        <div class="product-container">
+            <div class="product-images">
+                <div class="main-image">
+                    <img id="mainImage" src="" alt="Hình ảnh sản phẩm">
+                </div>
+                <div class="thumbnail-images">
+                    <!-- Thumbnail images will be added here by JavaScript -->
+                </div>
+            </div>
+            <div class="product-info">
+                <h1 id="productName">Tên Sản Phẩm</h1>
+                <div class="product-rating">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span class="review-count">(0 đánh giá)</span>
+                </div>
+                <div class="product-price">
+                    <span class="current-price" id="productPrice">0đ</span>
+                    <span class="original-price" id="originalPrice">0đ</span>
+                </div>
+                <div class="product-status">
+                    <span>Tình trạng: </span>
+                    <span id="stockStatus" class="in-stock">Còn hàng</span>
+                </div>
+                <div class="product-description">
+                    <h3>Mô tả sản phẩm</h3>
+                    <p id="productDescription">Mô tả sản phẩm sẽ được hiển thị ở đây</p>
+                </div>
+                <div class="product-actions">
+                    <div class="quantity-selector">
+                        <button class="quantity-btn" id="decrease">-</button>
+                        <input type="number" id="quantity" value="1" min="1">
+                        <button class="quantity-btn" id="increase">+</button>
+                    </div>
+                    <button class="add-to-cart-btn" id="addToCart">Thêm vào giỏ hàng</button>
+                    <button class="buy-now-btn" id="buyNow">Mua Ngay</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-reviews">
+        <h2>Đánh giá sản phẩm</h2>
+        <div class="reviews-container">
+            <!-- Reviews will be added here by JavaScript -->
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Về Chúng Tôi</h3>
+                <p>Fashion Store - Nơi mang đến cho bạn những sản phẩm thời trang chất lượng cao với giá cả hợp lý.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Liên Kết Nhanh</h3>
+                <ul>
+                    <li><a href="index.html">Trang Chủ</a></li>
+                    <li><a href="products.html">Sản Phẩm</a></li>
+                    <li><a href="cart.html">Giỏ Hàng</a></li>
+                    <li><a href="contact.html">Liên Hệ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Liên Hệ</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> 0123.456.789</li>
+                    <li><i class="fas fa-envelope"></i> info@fashionstore.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Đường ABC, Quận 1, TP.HCM</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Theo Dõi Chúng Tôi</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Fashion Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="product-detail.js"></script>
+</body>
+</html> 
